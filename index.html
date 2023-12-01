@@ -2,14 +2,196 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mijn Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1D2457;
+      color: ghostwhite
+    }
+
+    .header {
+      background-color: #599BD9;
+      padding: 30px;
+      text-align: center;
+      color: darkblue
+    }
+
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6BC9DC;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: #3F62FA;
+      color: white;
+    }
+
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+    }
+
+
+
+    div.gallery {
+
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+
+    }
+  </style>
 </head>
 
 <body>
-  Welkom op website
-</body>
 
-</html>
+  <div class="header">
+    <img src="salmone.jpg" alt="salmon" title="salmon" height="480">
+    <h1>Zalm</h3>
+  </div>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="aboutus.html">Over ons</a>
+    <a href="javascript:void(0)">Contact</a>
+    <a href="security.html">security</a>
+  </div>
+
+
+
+  <script>
+    window.onscroll = function () {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <h2>Alles over de zalm</h2>
+  <p>De <strong>coolste</strong> vis<strong> op aarde!</strong></p>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="" href="biologiezalm.html">
+        <img src="salmon-cool.jpg" alt="biologie" width="600" height="400">
+      </a>
+      <div class="desc">De biologie van de Zalm</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="" href="zalmpieleeft.html">
+        <img src="shutterstock_1503014120-1.jpg" alt="leef" width="600" height="400">
+      </a>
+      <div class="desc">De levensloop van een zalm</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="" href="zalmpierevenge.html">
+        <img src="afb441010_zalm3_na_heidemij_1979-1.jpg" alt="HEHEHEHAAA" width="600" height="400">
+      </a>
+      <div class="desc">Zalm visserij &amp; geschiedenis</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="" href="zalmpiedood.html">
+        <img src="Salmon_Panther.jpg" alt="sadge" width="600" height="400">
+      </a>
+      <div class="desc">Zalm gerechten</div>
+    </div>
+  </div>
+
+
+
+  <div class="clearfix"></div>
+
+  <footer>
+    <p>
+      ----------------------------------------------------<br>
+      Gemaakt door: <br>
+      Benjamin Tse &amp; Peter van Ewijk
+    </p>
+  </footer>
+</body>

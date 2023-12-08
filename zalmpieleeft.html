@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add icon library -->
+
   <a href = "index.html"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -15,10 +15,43 @@
   cursor: pointer;
 }
 
-/* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
 }
+body{
+color: white;
+  background-color: blue;
+  font-family: sans-serif;
+  
+}
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 900px) {
+    .column  {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column  {
+      width: 100%;
+    }
+  }
+  
 </style>
 </head>
 <body>
@@ -27,7 +60,30 @@
   <a href = "index.html"> 
 <button class="btn"><i class="fa fa-home"></i></button>
   </a>
-    <p>levensloop van zalmpie</p>
+  
+
+  <div class="row">
+    <div class="column" style="background-color: orange;">
+    <h2>De eitjes</h2>
+      <img src="egg.jpg" style="width:100%">
+    <p><strong>De eitjes van de zalm komen uit in ongeveer 3 maanden. </strong></p>
+    </div>
+    <div class="column" style="background-color: coral;">
+    <h2>Alevin</h2>
+      <img src="SasQFYc.jpg" style="width:100%">
+    <p><strong>Zo zien ze eruit nadat ze zijn uitgekomen. Het buikje is een soort lunch trommel met vitaminen, mineralen en suiker die ze kunnen gebruiken om het leven op te starten.</strong></p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+    <h2>Smolt</h2>
+      <img src="smolt.png" style="width:100%">
+    <p><strong>Rond het midden van het leven, 1-3 jaar oud. In groepen vertrekken ze samen naar de zee.</strong></p>
+    </div>
+    <div class="column" style="background-color: salmon;">
+    <h2>Eitjes leggende zalm</h2>
+      <img src="salmonsadgeverysadge.jpg" style="width:100%">
+    <p>Een volwassen zalm, bijna aan het eind van zijn leven. :( Hij legt nieuwe eitjes en sterft binnen de volgende 2 weken.</p>
+    </div>
+  </div>
 
 
 </body>

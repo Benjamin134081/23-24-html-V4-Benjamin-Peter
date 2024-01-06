@@ -29,10 +29,17 @@
     color: white;
   }
 
+ 
 
-.btn:hover {
-  background-color: RoyalBlue;
-}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky+.content {
+    padding-top: 60px;
+  }
 
 body {
   background-color: grey

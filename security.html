@@ -3,42 +3,72 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <a href = "index.html"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
+
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a:hover {
+    background-color: #6BC9DC;
+    color: black;
+  }
+
+  #navbar a.active {
+    background-color: #3F62FA;
+    color: white;
+  }
 
 
-.btn:hover {
-  background-color: RoyalBlue;
-}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky+.content {
+    padding-top: 60px;
+  }
+
+
 </style>
 </head>
 <body>
 
+   <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">Over ons</a>
+    <a href="Contact.html">Contact</a>
+    <a lass="active" href="security.html">security</a>
+  </div>
 
-  <a href = "index.html"> 
-<button class="btn"><i class="fa fa-home"></i></button>
-  </a>
 
-  <style>
-    body {
-   background-image:
-   url('afbeelding.png');
-}
-  </style>
-<head>Security van onze computers</head>
 
-<p>peopie</p>
-</body>
-</html>
+  <script>
+    window.onscroll = function () {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
 
 </body>

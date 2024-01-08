@@ -66,35 +66,130 @@
    background-image:
    url('afbeelding.png');
 }
+
   </style>
-<head>Security van onze computers</head>
+<head>Security van onze computers samenvatting</head>
 
 <html>
 </body>
 <h2>Paragraaf 2.2</h2>
 
-<p>Onze computers zijn goed beschermd, maar hackers kunnen via zwakheden in het architectuur of communicatie tussen de drie lagen 
+<p>
+  Onze computers zijn goed beschermd, maar hackers kunnen via zwakheden in het architectuur of communicatie tussen de drie lagen 
   (toepassingslaag, logische laag en fysieke laag) kwaad doen door de code te veranderen.
 </p>
 
-<p>Een voorbeeld van zo'een zwakheid gebruiken is een <b>SQL</b>-injectie, hierbij kan een app gegevens uit een database halen en weergeven.<br>  Als je de vraag vanuit de app naar de database aanpast,
+<p>
+  Een voorbeeld van zo'een zwakheid gebruiken is een <b>SQL</b>-injectie, hierbij kan een app gegevens uit een database halen en weergeven.<br>  Als je de vraag vanuit de app naar de database aanpast,
    kun je andere gegevens selecteren dan oorspronkelijk gevraagd.<br> In theorie kun je nieuwe gegevens toevoegen, bestaande aanpassen en zelfs verwijderen
   </p>
 
-   <p>Nog zo'een voorbeeld is een <b>XSS</b> injectie, hierbij wordt een stukje code in een vertrouwde website geinjecteerd, terwijl het lijkt op een deel van dat webstie,
+   <p>
+    Nog zo'een voorbeeld is een <b>XSS</b> injectie, hierbij wordt een stukje code in een vertrouwde website geinjecteerd, terwijl het lijkt op een deel van dat webstie,
      zodat de mensen die de website onderhouden niet gaan zien dat het om een hacker gaat die wat heeft geinjecteerd.
     </p>
 
 <h2>Paragraaf 2.3</h2>
 
-<p>Alle drie lagen zijn met elkaar verbonden, maar als de verbinding tussen die lagen niet veilig is, kan een hacker via de verbinding kwaad doen.
-
+<p>
+  Alle drie lagen zijn met elkaar verbonden, maar als de verbinding tussen die lagen niet veilig is, kan een hacker via de verbinding kwaad doen.
 </p>
 
-<p>Een voorbeeld hiervan is een "Man in the middle" aanval, hierbij maakt een hacker gebruik van een zwakheid in de verbinding tussen de user en een webstie om mee te "luisteren" naar wat er gebeurt.
+<p>
+  Een voorbeeld hiervan is een "Man in the middle" aanval, hierbij maakt een hacker gebruik van een zwakheid in de verbinding tussen de user en een webstie om mee te "luisteren" naar wat er gebeurt.
 Dit werd gedaan doordat de hacker een openbaar wifi-netwerk heeft, waar nietvermoedende mensen mee verbinden, maar dan loopt hun verbinding door de hotspot van de hacker.
 </p>
 
+<p>
+  De letter S in HTTPS staat voor secure, wat betekent dat er een beveiligde verbinding is tussen de user en de server. 
+  Dit kan de eigenaar van een website krijgen door een SSL certificaat te installeren, op die certficaat staat wie de eigenaren zijn, hierdoor weten de clients van wie de server is waar ze mee verbonden zijn.
+   Het wordt hiermee niet onmogelijk voor de hackers om weer mee te "luisteren", maar door middel van encryptie kan de hacker de informatie niet meer direct zien.
+</p>
+
+<p>
+  Met HTTPS worden de verzonden gegevens onleesbaar gemaakt met "end-to-end" encryptie, dit wordt mogelijk gemaakt omdat beide kanten van de verbinding een sleutel hebben,
+   waarmee hun communicatie wat versleuteld is kan worden omgezet naar hun echte berichten. Hiermee worden de zwakheden in de architectuur en de communicatie dus opgelost.
+</p>
+
+<h2>Paragraaf 2.4</h2>
+
+<p>
+  Maar mensen zijn toch de grootste zwakheid, en dat geldt niet alleen in de systemen die we gebruiken. <br>
+  Hoe we met wachtwoorden omgaan is hier een bekend voorbeeld van. 
+  Bij veel websites gebruiken mensen simpele wachtwoorden. <br>
+  Helaas zijn deze wachtwoorden gemakkelijk te kraken, waardoor een aanvaller makkelijk toegang kan krijgen tot een account.<br>
+  Wachtwoordkraken houdt in dat een aanvaller elk mogelijk wachtwoord probeert totdat het juiste is gevonden. <br>
+  Speciale programma's kunnen duizenden wachtwoorden per seconde proberen, een techniek genaamd brute force, waarbij brute kracht wordt gebruikt om het wachtwoord te achterhalen.
+</p>
+
+<p>
+  Websites proberen dit te voorkomen door een limiet te stellen aan het aantal pogingen voor een antwoord, hoewel een zwakheid in de architectuur dit nutteloos an maken.<br>
+  Door een lang en ingewikkeld wachtwoord te hebben kun je het moeilijker maken voor aanvallers om je account binnen te komen.
+</P>
+
+<h2>Paragraaf 2.5</h2>
+
+<p>
+  Er zijn 3 grote technieken hoe hackers aan je gegevens kunnen komen.
+</p>
+
+<ol><b>Social engineering</b></ol>
+<p>
+Dit methode maakt geen gebruik van systemen hacken, maar van de mens zelf.<br>
+Hierbij gebruiken hackers allemaal psychologische trucs om informatie uit je te halen, 
+door bijvoorbeeld te doen alsof ze een collega zijn die belangrijke informatie nodig hebben. 
+</p>
+
+<ol><b>Phishing</b></ol>
+<p>
+  Dit methode wordt sament met social engineering gebruikt, 
+  met behulp van een appje of een mailtje lokken criminelen je naar een nauwkeurig nagemaakte webstie van bijvoorbeeld de bank waar je je gegevens in moet vullen, 
+  zodat de hackers achter je informatie kunnen komen.
+</p>
+
+<ol><b>Malware</b></ol>
+<p>
+  Malware is een verzamelnaam voor software dat ontworpen is met een slecht doeleinde, 
+  Hieronder zijn enkele voorbeelden.
+</p>
+
+<h2><b>Paragraaf 2.6</b></h2>
+
+<p>Er zijn veel soorten malware, hieronder staan een paar voorbeelden.</p>
+
+<ol>Trojan horse</ol>
+<p>
+  Vaak vermomd als een onschuldige mail of een download op een website.<br>
+  Als je erop klikt zal het code activeren en je systeem aanvallen of openzetten voor hackers.
+</p>
+
+<ol>Virus</ol>
+<p>
+  Een virus is een soort malware dat bestaande software "besmet" door uitvoerbare bestanden te veranderen, 
+  waardoor er schade wordt aangericht op je computer en het zichzelf verspreidt naar andere computers.
+</p>
+
+<ol>Worm</ol>
+<p>
+  Een worm is een soort malware dat zichzelf verspreidt via het internet en computernetwerken, niet alle worms zijn schadelijk.<br>
+  Niet alle worms zijn slecht, maar ze nemen wel een deel van je netwerkcapaciteit in om zichzelf te verspreiden waardoor het wel een negatief effect heeft.
+</p>
+
+<ol>Spyware</ol>
+<p>
+  Spyware is een soort malware dat je computergebruik achterhaalt, bijvoorbeeld welke websites je bezoekt, je keyboard gebruik, verstuurde emails en geinstaleerde apps.<br>
+  Spyware wordt opgestart waneer je computer wordt opgestart.
+</p>
+
+<ol>Adware</ol>
+<p>
+  Adware is een soort malware dat bedoeld is om je advertenties te laten zien, het is niet altijd illegaal, maar vaak wordt het gebruikt om je ongewenste reclames te laten zien.
+</p>
+
+<ol>Ransomware</ol>
+<p>
+  Ransomware is een soort malware dat je bestanden versleutelt. Dit doen ze zodat je iets moet doen om je bestanden terug te krijgen, bijvoorbeeld door een geldbedrag over te maken.
+</p>
 
 </body>
 </html>

@@ -1,1 +1,147 @@
 
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  body {
+    background-color: white;
+    font-family: fantasy;
+  }
+
+  .glow {
+    font-size: 80px;
+    color: lightblue;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #365deb, 0 0 20px #5d7be8, 0 0 30px #3e65f7, 0 0 40px #2e57f0, 0 0 50px #5872d1, 0 0 60px #4f6ee0, 0 0 70px #5b76d9;
+    }
+
+    to {
+      text-shadow: 0 0 20px #5c8fe0, 0 0 30px #4e8ced, 0 0 40px #2e70d9, 0 0 50px #0c66f5, 0 0 60px #064bba, 0 0 70px #1a53ad, 0 0 80px #346abf;
+    }
+  }
+
+  body {
+    background-image:
+      url('images/heavon.jpg');
+    width: 98%;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+    padding: 35px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .quiz {
+    font-family: sans-serif;
+    color: darkblue;
+    font-size: 40px;
+  }
+
+  
+
+  .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: grab;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    position: relative;
+    display: inline-block;
+  }
+
+  .popup:hover {background-color: #3e8e41}
+
+  .popup:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  .popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  
+
